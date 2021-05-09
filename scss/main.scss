@@ -1,5 +1,5 @@
 @import "config";
-
+@import "menu";
 * {
   box-sizing: border-box;
 }
@@ -49,16 +49,16 @@ main {
   padding: 4rem;
   height: 100%;
 
-  .icons {
-    margin-top: 1rem;
+  a {
+    padding: 0.4rem;
 
-    a {
-      padding: 0.4rem;
+    .icons {
+      margin-top: 1rem;
+    }
 
-      &:hover {
-        color: $secondary-color;
-        @include easeOut();
-      }
+    &:hover {
+      color: $secondary-color;
+      @include easeOut();
     }
   }
 
